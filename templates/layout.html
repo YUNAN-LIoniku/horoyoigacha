@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<title>ほろよいガチャ: {% block title %}{% endblock %}</title>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=750, width=device-width">
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+
+
+
+        <!--くら寿司のキャラクターアイコンの挿入-->
+        <link href="/static/image/suntory.ico" rel="icon">
+
+        <link href="/static/styles.css" rel="stylesheet">
+
+
+
+
+
+    </head>
+
+    <body>
+
+        <main class="page">
+
+            <div class = "heading">
+            <image src="static/image/horoyoi.jpg" width="550">
+            <h1>ほろよい</h1>
+            <h1>ガチャ</h1>
+
+
+                <div class = "buttonarea">
+                    <a href = "budget.html" class = "btn btn--orange" > ほろよい　3カン<br> ガチャを回す</a>
+                    <a href = "calorie.html" class = "btn btn--orange" > 600 kcal以内<br> ガチャを回す</a>
+                </div>
+            {% block main %}{% endblock %}
+
+        </main>
+
+
+    </body>
+
+</html>

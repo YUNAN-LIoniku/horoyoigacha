@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    3つ選ぶ
+{% endblock %}
+
+
+{% block main %}
+
+ 
+
+
+<div class = "budget">
+    {% for menu in result_menu %}
+    <div class="box menu">
+        <p>{{ menu[0] }} <br>{{ menu[2] }}kcal</p>
+    </div>
+    {% endfor %}
+
+    <div class="box rst">
+        <p>合計 {{ sum_calorie }} kcal <br></p>
+    </div>
+</div>
+ 
+{% endblock %}

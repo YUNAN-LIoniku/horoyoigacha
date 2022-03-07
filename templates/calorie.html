@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    600kcal以内ガチャ
+{% endblock %}
+
+
+{% block main %}
+
+
+
+
+<div class = "calorie">
+    {% for menu in result_menu %}
+    <div class="box menu">
+        <p>{{ menu[0] }} <br>{{ menu[2] }}kcal</p>
+    </div>
+    {% endfor %}
+
+    <div class="box rst">
+        <p>合計 {{ r_calorie }} kcal </p>
+    </div>
+</div>
+
+{% endblock %}
